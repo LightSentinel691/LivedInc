@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+}
+
+[src="images/hero/andre-francois-mckenzie-08uIUe2a9XY-unsplash.jpg"] {
+    width: 100%;
+    height: 100vh;
+}
+.hero_navbar {
+    background-color: blue;
+    width: 100%;
+}
+p span {
+    vertical-align: bottom;
+}
+.hero_floatbar {
+   background-color: aqua;
+   width: 95%;
+   gap: 1rem;
+   margin: auto;
+   right: 2%;
+}
+[src="images/illustration.jpg"] {
+    width: 94%;
+    height: 83vh;
+    margin: auto;
+}
+
+
+.location_btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: cornsilk;
+    font-size: 27px;
+    background: rgba(255, 255, 255, 0.34);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.79);
+    margin: .3rem
+}
+#selected {
+    background: rgba(255, 255, 255, 0.68);
+    color: black;
+}
+.location_btn:hover {
+    background: rgba(255, 255, 255, 0.98);
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+.footer_section {
+    background-color: #242424;
+    color: #ffffff;margin-top: 2rem;
+}
+.footer_menu ul li:nth-child(1), .footer_clients ul li:nth-child(1), .contacts {
+    padding-bottom: 15px;
+    color: gray;
+}
+
+.footer_logo p {
+    line-height: 64px;
+    align-items: center;
+}
+
+.u_line {
+    color: #848482;
+    width: 16%;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #DCDCDC;
+}
+
+.property_images {
+    height: 90%;
+    width: 100%;
+}
+
+.property_price {
+    font-size: 2em;
+    font-weight: bold;
+}
+.property_size {
+    font-size: 1.1em;
+    color: #848482;
+    padding-bottom: 1em;
+}
+.property_details {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 16px;
+    background: #DCDCDC;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+
+
+

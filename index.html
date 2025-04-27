@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="hero_section relative">
+      <div class="hero_image">
+        <img src="images/hero/andre-francois-mckenzie-08uIUe2a9XY-unsplash.jpg" alt="" />
+      </div>
+      <div class="hero_navbar absolute top-0 flex flex-row md:flex-column justify-between text-xl items-center">
+        <div class="hero_1">
+            <p >
+                <!--Icon logo of house comes here-->
+                <img class="float-left" src="images/icons/house.png" alt="" />
+                <span class="content-center">LivedInc</span>
+              </p>
+        </div>
+        <div class="hero_2">
+            <ul class="list-none">
+                <li class="inline-block">About</li>
+                <li class="inline-block">Catalog</li>
+                <li class="inline-block">Houses</li>
+                <li class="inline-block">For rent</li>
+                <li class="inline-block">Commercial</li>
+              </ul>
+        </div>
+        <div class="hero_3">
+            <select name="currency" id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="KSH">KSH</option>
+              </select>
+              <button>Log in</button>
+        </div>
+      </div>
+      <div class="hero_text absolute top-40">Searching for the home of your dreams 24/7</div>
+      <div class="hero_floatbar absolute bottom-20 flex justify-center" >
+        <div class="grow">
+            <p>
+                <!--Location Logo-->
+                <img class="float-left pr-2"  src="images/icons/location.png" alt="" />
+                <span>Location</span><br>
+                <span>Kitisuru, Kenya</span>
+              </p>
+        </div>
+        <div class="grow ">
+            <p>
+                <!--Price Logo-->
+                <img class="float-left pr-2" src="images/icons/coin.png" alt="" />
+                <span>Price</span><br>
+                <span>$2,000 - $13,000</span>
+              </p>
+        </div>
+        <div class="grow">
+            <p>
+                <!--rooms Logo-->
+                <img class="float-left pr-2" src="images/icons/bed.png" alt="" />
+                <span>Number of rooms</span><br>
+                <span>3 - 5</span>
+              </p>
+        </div>
+        <div class="grow">
+            <p>
+                <!--Property Logo-->
+                <img class="float-left pr-2" src="images/icons/residential.png" alt="" />
+                <span>Property type</span><br>
+                <span>Apartments</span>
+              </p>
+        </div>
+        <div class="grow">
+            <button>Search</button>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="about_section grid grid-cols-3 gap-2">
+      <div class="about_text">
+        <p>About</p>
+      </div>
+      <div class="about_text1">
+        <p>
+          We offer professional services in buying and selling residential and
+          commercial real estate. We strive to make the process of buying or
+          selling real estate as conveninent and transparent as possible for our
+          clients.
+        </p>
+      </div>
+      <div class="about_text2">
+        <p>
+          Our experienced team of specialists is ready to provide you with
+          comprehensive support at all stages of the transaction.
+        </p>
+      </div>
+    </div>
+    <div class="experience_section">
+        <div class="experience_section_row1 grid  grid-cols-2  w-1/2" >
+            <div>
+                <p>
+                    <span>735</span>
+                    <hr>
+                    completed deals
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>950+</span><hr>
+                    Satisfied customers
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>19</span><hr>
+                    Years of experience
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>245</span><hr>
+                    Cities around Africa
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="our_services flex flex-row">
+        <p>Our services</p>
+        <div class="grow-1">
+            <p>
+                <img src="images/services/apartment-modified.png" alt="">
+                <span>Buy an apartment</span><br>
+                1 315 offers
+            </p>
+        </div>
+        <div class="grow-1">
+            <p>
+                <img src="images/services/Rent.png" alt="">
+                <span>Rent an apartment</span><br>
+                2 785 offers
+            </p>
+        </div>
+        <div class="grow-1">
+            <p>
+                <img src="images/services/Bungalow.png" alt="">
+                <span>Buy a cottage</span><br>
+                915 offers
+            </p>
+        </div>
+        <div class="grow-1">
+            <p>
+                <img src="images/services/commercial.png" alt="">
+                <span>Commercial</span><br>
+                600 offers
+            </p>
+        </div>
+    </div>
+    <div class="house_image_options relative">
+        <div class="house_image">
+            <img class="rounded-[1.5vw]" src="images/illustration.jpg" alt="">
+        </div>
+        <div class="house_hover_display">
+
+        </div>
+        <div class="house_image_navbar absolute bottom-10 left-120">
+            <button id="selected" class="location_btn">Kenya</button>
+            <button  class="location_btn inline-block mr-12">Egypt</button>
+            <button class="location_btn">South Africa</button>
+            <button class="location_btn">Tanzania</button>
+            <button class="location_btn">Madagascar</button>
+            <button class="location_btn">Rwanda</button>
+        </div>
+    </div>
+    <div class="Best_Properties">
+        <div class="flex justify-between pt-16 pb-4">
+            <div class="pl-15 text-4xl font-semibold"><p>Best properties</p></div>
+            <div class="text-[1.2rem]"><p>
+                Explore all properties 
+                <img class="float-right pr-18 pl-4" src="images/icons/to-right.png" alt="">
+                 </p>
+            </div>
+        </div>
+        <div class="Best_Properties_grid grid grid-cols-4 gap-5 h-[56rem] pl-14 p-6 pr-14" >
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_1.jpg" alt="">
+                    <span class="property_price">$75,500</span> <br>
+                    <span class="property_size inline-block">44.5m\^2 apartments</span> <br>
+                    <span class="property_details">2 bedroom</span>
+                    <span class="property_details"> 1 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_4.jpg" alt="">
+                    <span class="property_price">$310,500</span> <br>
+                    <span class="property_size inline-block">120.5m\^2 villa </span><br>
+                    <span class="property_details">3 bedroom</span>
+                    <span class="property_details"> 4 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_3.jpg" alt="">
+                    <span class="property_price">$68,500</span> <br>
+                    <span class="property_size inline-block">38.1m\^2 apartments</span> <br>
+                    <span class="property_details">1 bedroom</span>
+                    <span class="property_details"> 1 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_7.jpg" alt="">
+                    <span class="property_price">$184,300</span> <br>
+                    <span class="property_size inline-block">105.3m\^2 apartments</span> <br>
+                    <span class="property_details">1 bedroom</span>
+                    <span class="property_details"> 2 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_5.jpg" alt="">
+                    <span class="property_price">$175,500</span><br>
+                    <span class="property_size inline-block">115.9m\^2 apartments</span> <br>
+                    <span class="property_details">3 bedroom</span>
+                    <span class="property_details"> 2 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_9.jpg" alt="">
+                    <span class="property_price">$52,000</span><br>
+                    <span class="property_size inline-block">35.2m\^2 apartments</span> <br>
+                    <span class="property_details">1 bedroom</span>
+                    <span class="property_details"> 1 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_4.jpg" alt="">
+                    <span class="property_price">$59,400</span><br>
+                    <span class="property_size inline-block">48.0m\^2 apartments</span> <br>
+                    <span class="property_details">2 bedroom</span>
+                    <span class="property_details"> 2 bathroom</span>
+                </p>
+            </div>
+            <div>
+                <p class="h-[20rem]">
+                    <!--House Image-->
+                    <img class="property_images rounded-[1.5vw]" src="images/Houses/house_2.jpg" alt="">
+                    <span class="property_price">$190,990</span><br>
+                    <span class="property_size inline-block">185.6m\^2 apartments</span> <br>
+                    <span class="property_details">5 bedroom</span>
+                    <span class="property_details"> 3 bathroom</span>
+                </p>
+            </div>
+        </div>     
+    </div>
+    <div class="Blog_section pb-2 text-xl pt-10">
+        <div class="columns-4 gap-13 justify-items-center h-[10rem] relative ">
+            <p class="w-2/3 ">
+                Real Estate Market Trends 2025: What to expect for Buyers and Sellers?<br>
+                <span class="u_line absolute bottom-0 text-sm">January 16</span>
+            </p>
+            <p class="w-2/3 border-b-indigo-500">
+                How to chose the Perfect Rental Property: Expert Tips
+                <br>
+                <span class="u_line absolute bottom-2 text-sm ">January 29</span>
+            </p>
+            <p class="w-2/3">
+                Interior Decoration: Trends and Designer Tips for Creating a Cozy Home <br>
+                <span class="u_line absolute bottom-0 text-sm">February 23</span>
+            </p>
+            <p class="w-2/3">
+                Mortage Loans: Which Banks offer Favourable Terms in the Current Situation? <br>
+                <span  class="u_line absolute bottom-0 text-sm">April 21</span>
+            </p>
+        </div>
+    </div>
+    <div class="footer_section grid grid-cols-4 p-8">
+        <div class="footer_logo pl-6 pt-10">
+            <p>
+                <img class="float-left pr-3" src="images/icons/house.png" alt="">
+                LivedInc
+            </p>
+        </div>
+        <div class="footer_menu">
+            <ul>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Houses</li>
+                <li>For rent</li>
+                <li>Commercial</li>
+            </ul>
+        </div>
+        <div class="footer_clients">
+            <ul>
+                <li>For Clients</li>
+                <li>Support</li>
+                <li>Real estate valuation</li>
+                <li>Legal support</li>
+                <li>Rent and sale</li>
+                <li>Mortgage calculation</li>
+            </ul>
+        </div>
+        <div class="footer_contacts">
+            <p class="contacts">Contacts</p>
+            <p>+254 722-001-001</p>
+            <a href="mailto:hello@livedInc.com">hello@livedInc.com</a>
+            <div class="social_media">
+                <ul class="list-none pt-7  ">
+                    <!--Replace text here with Icons-->
+                    <li class="inline-block p-1 w-[2.7rem]"><a href="#"><img src="images/icons/Social/facebook.png" alt=""></a></li>
+                    <li class="inline-block p-1 w-[2.7rem]"><a href="#"><img src="images/icons/Social/twitter.png" alt=""></a></li>
+                    <li class="inline-block p-1 w-[2.7rem]"><a href="#"><img src="images/icons/Social/instagram.png" alt=""></a></li>
+                    <li class="inline-block p-1 w-[2.7rem]"><a href="#"><img src="images/icons/Social/tiktok (1).png" alt=""></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+  </body>
+</html>
