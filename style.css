@@ -15,10 +15,10 @@ p span {
 }
 .hero_floatbar {
    background-color: aqua;
-   width: 95%;
+   width: 85%;
    gap: 1rem;
    margin: auto;
-   right: 2%;
+   right: 8%;
 }
 [src="images/illustration.jpg"] {
     width: 94%;
@@ -26,6 +26,14 @@ p span {
     margin: auto;
 }
 
+.experience_hr {
+    border-top: 2px solid #DCDCDC;
+    margin-top: 1.3rem;
+}
+
+.experience_section {
+    margin-inline-end: 10rem;
+}
 
 .location_btn {
     -webkit-border-radius: 28;
