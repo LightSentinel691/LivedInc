@@ -7,19 +7,53 @@
     height: 100vh;
 }
 .hero_navbar {
-    background-color: blue;
     width: 100%;
+}
+
+select {
+    background-color: #808080; /* Light grey background */
+}
+#LivedNav {
+    margin-top: 1.2rem;
+
 }
 p span {
     vertical-align: bottom;
 }
 .hero_floatbar {
-   background-color: aqua;
-   width: 85%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    border: 1px solid rgba(255, 255, 255, 1);
+   width: 80%;
    gap: 1rem;
    margin: auto;
    right: 8%;
 }
+.hero_btn {
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 20px;
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1.2rem 5rem 1.2rem 5rem;
+    border: solid #2f3133 2px;
+    text-decoration: none;
+}
+.hero_btn:hover {
+    background: #222324;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
 [src="images/illustration.jpg"] {
     width: 94%;
     height: 83vh;
