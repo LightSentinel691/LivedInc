@@ -74,21 +74,17 @@ p span {
     -moz-border-radius: 28;
     border-radius: 28px;
     font-family: Arial;
-    color: cornsilk;
+    color: black;
     font-size: 27px;
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.76);
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.79);
     margin: .3rem
 }
-#selected {
-    background: rgba(255, 255, 255, 0.68);
-    color: black;
-}
 .location_btn:hover {
-    background: rgba(255, 255, 255, 0.98);
-    color: #000000;
+    background: rgba(0, 0, 0, 0.28);
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1.8em;
 }
@@ -138,8 +134,177 @@ p span {
     background: #DCDCDC;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin-inline-start: 1rem;
 }
 
+properties:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 950px) {
+    .hero_navbar div:not(:first-child) {display: none;}
+    .hero_1 {
+        display: block;
+        width: 100%;
+    }
+    .hero_navbar div a.icon {
+      float: right;
+      display: block !important; 
+    }
+}  
 
 
+@media screen and (max-width: 950px) {
+    .hero_navbar.responsive {position: relative; background-color: pink;}
+    .hero_navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .hero_navbar.responsive div {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .hero_2 ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .hero_3 {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+    .background_image {
+        display: block !important;
+        width: 100%;
+        position: relative;
+        justify-items: center;
+    }
+    .picture_image {
+        width: 80%;
+    }
+    .contact_details {
+        width: 80%;
+    }
+    .contact_details div:first-of-type p{
+        text-align: center !important;
+    }
+    .contact_grid {
+        height: 155vh !important;
+    }
+  }
+
+
+  /* Homepage Responsive styling */
+  
+  @media screen and (max-width: 950px) {
+    .hero_text {
+        width: 11ch;
+        padding: 0 5px 0 10px;
+        font-size: 4rem;
+    }
+    .hero_1 p {
+        padding-left: 0.5rem;
+    }
+    .about_section {
+        grid-template-columns: 100%;
+        height: auto;
+    }
+    .about_text1 {
+        justify-items: center;
+    }
+    .about_text2 {
+        justify-items: center;
+    }
+
+
+    .experience_section {
+        position: relative;
+        height: auto;
+
+    }
+    .experience_section_row1 {
+        display: block;
+        text-align: center;
+    }
+    .exp_txt {
+        padding: 0;
+    }
+
+
+    .our_services {
+        height: auto;
+    }
+    .services_categories {
+        display: block;
+        padding: 0 1 0 0;
+        justify-items: center;
+    }
+
+    .house_image_options {
+        margin-top: 2rem;
+    }
+
+
+
+    .Best_Properties_txt {
+        display: block;
+    }
+    .Best_Properties_Explore {
+        justify-items: flex-end;
+        padding-top: 1em;
+        font-size: 1.2rem;
+    }
+    .Best_Properties_Explore img {
+        padding-right: 1rem;
+        padding-left: 3px;
+    }
+
+    .Best_Properties_grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0.5rem;
+        height: auto;
+        gap:10px
+    }
+    .Best_Properties_grid div p {
+        height: auto;
+        width: 100%;
+        
+    }.property_details2 {
+        display: block;
+        margin-top: 0.6rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+        
+    }
+
+    .Blog_section {
+
+        display: block;
+        height: auto;
+    }
+
+    .blogs {
+        height: auto;
+        display: block;
+        columns: 1;
+    }
+    .blogs p {
+        width: 20ch;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+    .blogs p>span {
+        position: relative;
+        margin: 1em;
+    }
+    .blogs_title {
+        text-align: center;
+        padding-left:  0;
+        padding-bottom: 0.2rem;
+        font-size: 3rem;
+    }
+  }
 

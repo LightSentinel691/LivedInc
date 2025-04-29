@@ -4,75 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="grid h-screen place-items-center bg-[url(images/Contacts/bg_1.jpg)] bg-cover">
-    <div class="background_image flex w-3/5">
-        <div class="picture_image w-3/5">
-            <img class="h-full" src="images/Contacts/Africa1.png" alt="">
+<body>
+    <div class="hero_navbar absolute top-0 flex flex-row md:flex-column justify-between text-xl items-center pb-7 pt-5 text-white" id="myTopnav">
+        <div class="hero_1">
+            <p class="inline-block pl-18" >
+                <!--Icon logo of house comes here-->
+                <img class="float-left" src="images/icons/house.png" alt="" />
+                <span id="LivedNav" class=" text-3xl text-center inline-block pl-2 animate-bounce">LivedInc</span>
+              </p>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="display: none;">
+                <img src="images/icons/menus.png" alt="">
+              </a>
         </div>
-        <div class="contact_details w-2/5 pl-7 " style="background-color: #FAF5EF;">
-            <div>
-                <p class="text-7xl font-semibold mt-4 text-right mr-4 pr-10">Contact Us</p>
-                <p class="text-5xl text-gray-400 mb-3 text-right mr-4 pr-14">Africa</p>
+        <div class="hero_2">
+            <ul class="list-none">
+                <li class="inline-block text-2xl pl-3 pt-2 pr-6 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold"><a href="index.html">Home</a></li>
+                <li class="inline-block text-2xl pl-3 pt-2 pb-3 pr-6 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold"><a href="index.html#about_part">About</a></li>
+                <li class="inline-block text-2xl pr-6 pl-3 pt-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold"><a href="index.html#id_services">Our Services</a></li>
+                <li class="inline-block text-2xl pr-6 pl-3 pt-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold"><a href="index.html#id_properties">Properties</a></li>
+                <li class="inline-block text-2xl pr-6 pl-3 pt-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold line-through"><a href="contacts.html">Contact Us</a></li>
+              </ul>
+        </div>
+        <div class="hero_3 pr-45">
+            <select name="currency" id="currency" class="p-2">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="KSH">KSH</option>
+              </select>
+              <button class="pl-3 text-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold">Log in</button>
+        </div>
+      </div>
+    <div class="contact_grid grid h-screen place-items-center bg-[url(images/Contacts/bg_1.jpg)] bg-cover" >
+        <div class="background_image flex w-3/5">
+            <div class="picture_image w-3/5">
+                <img class="h-full" src="images/Contacts/Africa1.png" alt="">
             </div>
-            <div class="flex">
-                <div class="contact_country w-1/2 inline-block m-3">
-                    <img src="images/icons/Kenya.png" alt="">
-                    <span class="text-xl text-gray-700">Kenya</span><br>
-                    <span class="text-sm text-gray-600">+254 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+            <div class="contact_details w-2/5 pl-7 " style="background-color: #FAF5EF;">
+                <div>
+                    <p class="text-7xl font-semibold mt-4 text-right mr-4 pr-10">Contact Us</p>
+                    <p class="text-5xl text-gray-400 mb-3 text-right mr-4 pr-14">Africa</p>
                 </div>
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/Egypt.png" alt="">
-                    <span class="text-xl text-gray-700">Egypt</span><br>
-                    <span class="text-sm text-gray-600">+20 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                <div class="flex">
+                    <div class="contact_country w-1/2 inline-block m-3">
+                        <img src="images/icons/Kenya.png" alt="">
+                        <span class="text-xl text-gray-700">Kenya</span><br>
+                        <span class="text-sm text-gray-600">+254 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/Egypt.png" alt="">
+                        <span class="text-xl text-gray-700">Egypt</span><br>
+                        <span class="text-sm text-gray-600">+20 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
                 </div>
-            </div>
-            <div class="flex">
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/south-africa.png" alt="">
-                    <span class="text-xl text-gray-700">South_Africa</span><br>
-                    <span class="text-sm text-gray-600">+27 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                <div class="flex">
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/south-africa.png" alt="">
+                        <span class="text-xl text-gray-700">South_Africa</span><br>
+                        <span class="text-sm text-gray-600">+27 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/Tanzania.png" alt="">
+                        <span class="text-xl text-gray-700">Tanzania</span><br>
+                        <span class="text-sm text-gray-600">+255 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
                 </div>
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/Tanzania.png" alt="">
-                    <span class="text-xl text-gray-700">Tanzania</span><br>
-                    <span class="text-sm text-gray-600">+255 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                <div class="flex">
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/Madagascar.png" alt="">
+                        <span class="text-xl text-gray-700">Madagascar</span><br>
+                        <span class="text-sm text-gray-600">+261 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/Rwanda.png" alt="">
+                        <span class="text-xl text-gray-700">Rwanda</span><br>
+                        <span class="text-sm text-gray-600">+250 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
                 </div>
-            </div>
-            <div class="flex">
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/Madagascar.png" alt="">
-                    <span class="text-xl text-gray-700">Madagascar</span><br>
-                    <span class="text-sm text-gray-600">+261 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
-                </div>
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/Rwanda.png" alt="">
-                    <span class="text-xl text-gray-700">Rwanda</span><br>
-                    <span class="text-sm text-gray-600">+250 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/Nigeria.png" alt="">
-                    <span class="text-xl text-gray-700">Nigeria</span><br>
-                    <span class="text-sm text-gray-600">+234 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
-                </div>
-                <div class="contact_country inline-block w-1/2 m-3">
-                    <img src="images/icons/Ethiopia.png" alt="">
-                    <span class="text-xl text-gray-700">Ethiopia</span><br>
-                    <span class="text-sm text-gray-600">+251 722-001-001</span><br>
-                    <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                <div class="flex">
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/Nigeria.png" alt="">
+                        <span class="text-xl text-gray-700">Nigeria</span><br>
+                        <span class="text-sm text-gray-600">+234 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
+                    <div class="contact_country inline-block w-1/2 m-3">
+                        <img src="images/icons/Ethiopia.png" alt="">
+                        <span class="text-xl text-gray-700">Ethiopia</span><br>
+                        <span class="text-sm text-gray-600">+251 722-001-001</span><br>
+                        <span class="text-sm text-gray-600"><a href="mailto:Headquarters@LivedInc.co">Email Us</a></span>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "hero_navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "hero_navbar";
+          }
+        }
+        </script>
+    
 </body>
 </html>
