@@ -15,10 +15,18 @@
                 <img class="float-left" src="images/icons/house.png" alt="" />
                 <span id="LivedNav" class=" text-3xl text-center inline-block pl-2 animate-bounce">LivedInc</span>
               </p>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="display: none;">
-                <img src="images/icons/menus.png" alt="">
-              </a>
         </div>
+        <div class="mobile-menu">
+            <details class="mobile-dropdown">
+              <summary>☰ Menu</summary>
+              <div>
+                <a href="index.html">Home</a>
+                <a href="index.html#about_part">About</a>
+                <a href="index.html#id_services">Our Services</a>
+                <a href="index.html#id_properties">Properties</a>
+              </div>
+            </details>
+          </div>
         <div class="hero_2">
             <ul class="list-none">
                 <li class="inline-block text-2xl pl-3 pt-2 pr-6 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-gray-900 hover:font-semibold"><a href="index.html">Home</a></li>
@@ -108,17 +116,6 @@
         </div>
 
     </div>
-
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "hero_navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "hero_navbar";
-          }
-        }
-        </script>
     
 </body>
 </html>

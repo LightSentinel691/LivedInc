@@ -136,44 +136,85 @@ p span {
     text-decoration: none;
     margin-inline-start: 1rem;
 }
+.mobile-menu {
+    display: none;
+}
+.property_details2 {
+    margin-left: 0.3rem;
+} 
+#property_1 {
+    margin-bottom: 40px;
+}
 
-properties:hover {
+.foot_link:hover {
+    transform: scale(1.5);
+}
+
+
+.properties:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 950px) {
-    .hero_navbar div:not(:first-child) {display: none;}
+
+    .hero_2, .hero_3 {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: block !important;
+        padding-right: 2rem;
+    }
+    .mobile-dropdown summary {
+        list-style: none;
+        cursor: pointer;
+        color: white;
+        font-size: 1.1rem;
+        width: 140%;
+      }
+      .mobile-dropdown[open] summary::after {
+        content: " ▲";
+      }
+      .mobile-dropdown summary::after {
+        content: " ▼";
+      }
+      .mobile-dropdown div {
+        background: white;
+        color: black;
+        position: absolute;
+        z-index: 10;
+        top: 60px;
+        right: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        width: 150px;
+        padding: 0.5rem 0;
+      }
+      .mobile-dropdown a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: black;
+      }
+      .mobile-dropdown a:hover {
+        background-color: #eee;
+      }
+      
+
+
+
+    
     .hero_1 {
         display: block;
         width: 100%;
-    }
-    .hero_navbar div a.icon {
-      float: right;
-      display: block !important; 
     }
 }  
 
 
 @media screen and (max-width: 950px) {
-    .hero_navbar.responsive {position: relative; background-color: pink;}
-    .hero_navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .hero_navbar.responsive div {
-      float: none;
-      display: block;
-      text-align: left;
-    }
     .hero_2 ul li {
         display: block;
         width: 100%;
         text-align: center;
     }
-
-    
-
 
     .hero_3 {
         display: block;
@@ -297,10 +338,18 @@ properties:hover {
     }.property_details2 {
         display: block;
         margin-top: 0.6rem;
-        margin-right: 3rem;
-        margin-bottom: 1rem;
+        margin-left: 1rem;
+        width: 8rem;;
+        margin-bottom: 0.9rem;
         
     }
+    .prop_txt {
+        top:0.3rem
+    }
+    #prop_txt2 {
+        margin-top: 0.15rem;
+    }
+
 
     .Blog_section {
 
